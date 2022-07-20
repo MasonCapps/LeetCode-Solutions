@@ -9,12 +9,11 @@ var sortedSquares = function(nums) {
       let elementSwapper = squaredArray[i]
       squaredArray[i] = squaredArray[i + 1];
       squaredArray[i + 1] = elementSwapper;
+    } else if (count > squaredArray.length) {
+      break;
     } else {
       i = -1;
       count++;
-    }
-    if (count > squaredArray.length) {
-      break;
     }
   }
   return squaredArray;
