@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 var mergeTwoLists = function(list1, list2) {
   const newHead = new ListNode(null);
   let prev = newHead;
