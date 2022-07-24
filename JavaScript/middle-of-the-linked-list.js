@@ -1,13 +1,10 @@
 var middleNode = function(head) {
-  let middle = head;
-  let end = head;
-  while (end) {
-    if (end.next === null) {
-      break;
-    } else {
-      end = end.next.next;
-    }
-    middle = middle.next;
+  let fast = head;
+  let slow = head;
+  
+  while (fast && fast.next) {
+    fast = fast.next.next;
+    slow = slow.next;
   }
-  return middle;
+  return slow;
 };
