@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 var removeNthFromEnd = function(head, n) {
   let dummyHead = new ListNode(-1);
   dummyHead.next = head;
