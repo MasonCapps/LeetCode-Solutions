@@ -1,3 +1,5 @@
+from ast import List
+
 def containsDuplicate(self, nums: List[int]) -> bool:
   seen = set()
   for number in nums:
