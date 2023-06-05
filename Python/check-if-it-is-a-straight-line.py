@@ -7,7 +7,8 @@ class Solution:
 
     for i in range(2, len(coordinates)):
       x, y = coordinates[i]
-      if (y - y1) * (x - x2) != (y - y2) * (x - x1):
+      if (x - x1) * (y2 - y1) != (y - y1) * (x2 - x1):
         return False
     return True
+    
     
